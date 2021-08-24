@@ -62,7 +62,7 @@ public class AccountCurrencies implements Comparable<AccountCurrencies> {
 		}
 	}
 
-	public void removeFromCurrencyAmount(String remove) {
+	public void removeFromCurrenciesAmounts(String remove) {
 		HashMap<String, Integer> curtorem = textToMap(remove);
 
 		for (String key : curtorem.keySet()) {

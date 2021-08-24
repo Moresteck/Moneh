@@ -19,7 +19,7 @@ public class Bank {
 
 	public void removeHoldings(String player, String remove) {
 		AccountCurrencies currencies = new AccountCurrencies(this.holdings.remove(player.toLowerCase()));
-		currencies.removeFromCurrencyAmount(remove);
+		currencies.removeFromCurrenciesAmounts(remove);
 
 		String text = currencies.toText();
 		this.holdings.put(player.toLowerCase(), text);
