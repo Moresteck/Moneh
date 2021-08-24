@@ -68,13 +68,16 @@ public class Config {
 
 	public ArrayList<AccountCurrencies> getCurrenciesInWeightOrder(AccountCurrencies acc) {
 		ArrayList<AccountCurrencies> cur = new ArrayList<>();
+
 		for (String key : acc.getCurrenciesMap().keySet()) {
 			AccountCurrencies acc2 = new AccountCurrencies(key + acc.getCurrenciesMap().get(key));
 			cur.add(acc2);
 		}
+
 		Collections.sort(cur, (v1, v2) -> {
 			return v1.compareTo(v2) * -1;
 		});
+
 		return cur;
 	}
 }
