@@ -1,0 +1,10 @@
+name: Moneh
+description: Economy and trading plugin with multiple currencies support
+author: Moresteck
+main: pl.moresteck.moneh.Moneh
+version: 3.0.0-alpha1
+
+commands:
+    moneh:
+        usage: /<command>
+        aliases: [money]
